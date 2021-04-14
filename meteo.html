@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Station météo</title>
+    <link rel="stylesheet" href="meteo.css">
+</head>
+<header>
+    <h1>Bienvenue dans la station météo de la promo</h1>
+</header>
+<body>
+<menu>
+    <button id="lastMeasure" type="button"> Dernière mesure</button>
+    <button id="topMeasure" type="button"> Top mesure</button>
+    <button id="tableMeasure" type="button"> Tableau des mesures</button>
+    <button id="graphicMeasure" type="button"> Graphique des mesures</button>
+</menu>
+<section id="select">
+    <h2>Quelle mesure vous interesse?</h2>
+    <form>
+        <SELECT id="measureSelection" size="1">
+            <OPTION value="CO2"> Equivalent CO2</OPTION>
+            <OPTION value="HUMIDITY"> Humidité</OPTION>
+            <OPTION value="PRESSURE"> Pression</OPTION>
+            <OPTION value="TEMPERATURE"> Température</OPTION>
+            <OPTION value="VOC"> Particules</OPTION>
+        </SELECT>
+    </form>
+</section>
+
+<section id="periodSelection">
+
+    <input id="dateStart" type="date" value="2021-01-02">Date Début</input>
+    <input id="dateEnd" type="date" value="2021-04-13">Date Fin</input>
+    <button id="dateValidation" type="submit"> Valider</button>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Date</th>
+            <th>Valeur de Mesure</th>
+        </tr>
+        </thead>
+
+        <tbody id="corpsTableau">
+
+        </tbody>
+
+    </table>
+
+</section>
+
+<section id="restitution">
+
+</section>
+
+
+<script src="meteo.js"></script>
+</body>
+</html>

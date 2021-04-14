@@ -1,0 +1,62 @@
+html{
+    font-family: Verdana;
+    }
+h1 {
+    text-align: center;
+    width: 80vw;
+    margin: auto;
+    background-color: #a5a5a3;
+    font-size: 24px;
+}
+menu{
+    display:flex;
+    justify-content: center;
+    margin-top: 30px;
+    background-color: #d2bfbf;
+}
+button {
+    margin : 8px;
+    border: none;
+    background-color: inherit;
+    width: 20pc;
+}
+button:hover {
+    font-weight: bold;
+}
+#select{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    border : solid;
+    border-color: #868585;
+    border-width: 1px;
+}
+form{
+    margin-bottom: 10px;
+}
+restitution {
+    text-align: center;
+    background-color: #f3c7c7;
+    display:flex;
+    justify-content: center;
+}
+
+#dateValidation {
+    border-radius: 8px  ;
+    border : 3px black solid;
+    background-color: #d2bfbf;
+    }
+
+#periodSelection{
+    text-align: center;
+    padding : 8px;
+    font-size: 10px;
+    }
+
+table, th, td {
+    border-collapse: collapse;
+    border: 1px dimgrey solid;
+    padding: 0.3rem;
+    margin: 1rem auto;
+ }
